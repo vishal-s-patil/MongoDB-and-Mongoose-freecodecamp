@@ -105,10 +105,9 @@ const queryChain = (done) => {
     .select('name favoriteFoods') // or '-age'
     .exec(function (err, data) {
       if (err) done(err, null);
-      done(null, err);
+      done(null, data);
     })
 };
-
 /** **Well Done !!**
 /* You completed these challenges, let's go celebrate !
  */
